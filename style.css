@@ -1,15 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: grid;
     place-items: center;
     height: 100vh;
     background-color: #0003;
 }
-.carrossel{
+
+.carrossel {
     position: relative;
     width: 80%;
     height: 80%;
@@ -21,7 +23,7 @@ body{
     animation: slider 12s infinite, fade 4s;
 }
 
-.carrossel::after{
+.carrossel::after {
     position: absolute;
     content: var(--text-description);
     width: 100%;
@@ -35,24 +37,29 @@ body{
 }
 
 @keyframes slider {
-    0%, 33% {
-        background-image: url(./img/olhos-gato.jpg);
-        --text-description: "Olhos de gato!"
+    0%,
+    33% {
+        background-image: url(./img/quadra.jpg);
+        --text-description: "Quadra do SENAI, lugar tranquilo para descansar!"
     }
-    34%, 66% {
-        background-image: url(./img/olhos-cachorro.jpg);
-        --text-description: "Olhos de cachorro!"
+    34%,
+    66% {
+        background-image: url(./img/biblioteca.jpg);
+        --text-description: "Biblioteca do SENAI, lugar calmo para estudar e descansar!"
     }
-    67%, 100% {
-        background-image: url(./img/olhos-aguia.jpg);
-        --text-description: "Olhos de aguia!"
+    67%,
+    100% {
+        background-image: url(./img/b-04.jpg);
+        --text-description: "Sala b-04 do SENAI, momento de muita alegria!"
     }
 }
+
 @keyframes fade {
     0% {
         opacity: 0;
     }
-    15%, 85% {
+    15%,
+    85% {
         opacity: 1;
     }
     100% {
