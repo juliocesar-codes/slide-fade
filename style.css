@@ -39,13 +39,13 @@ body {
 @keyframes slider {
     0%,
     33% {
-        background-image: url(./img/quadra.jpg);
-        --text-description: "Quadra do SENAI, lugar tranquilo para descansar!"
+        background-image: url(./img/refeitorio.jpg);
+        --text-description: "Refeitorio do SENAI, lugar tranquilo para lanchar e descansar!"
     }
     34%,
     66% {
-        background-image: url(./img/biblioteca.jpg);
-        --text-description: "Biblioteca do SENAI, lugar calmo para estudar e descansar!"
+        background-image: url(./img/ping-pong.jpeg);
+        --text-description: "Ping Pong do SENAI, lugar calmo para jogar e se divertir!"
     }
     67%,
     100% {
